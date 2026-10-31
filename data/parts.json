@@ -1,0 +1,19 @@
+{
+ "parts": {
+  "20-statutes-01.json": {
+   "acts": [
+    "central-province-provincial-council-pawn-brokers-amended-statute-no-01-of-2015"
+   ],
+   "sha256": "1d79d748088e35d6e364593468ae1fec63d5d600aa78b23882c81cb5042ef6ad"
+  },
+  "20-statutes-02.json": {
+   "acts": [
+    "central-provincial-irrigation-statute-no-5-of-2017",
+    "early-childhood-development-charter-no-03-of-2015",
+    "statute-for-the-establishment-of-central-province-resource-centre-of-local-autho"
+   ],
+   "sha256": "ba44a4d8a1da3bed4f943f8897346ca49f8e3a41487778179c41a36cf79e23ef"
+  }
+ },
+ "schema": 1
+}
