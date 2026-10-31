@@ -1,0 +1,61 @@
+{
+ "country": "LK-2",
+ "acts": [
+  {
+   "slug": "central-province-provincial-council-pawn-brokers-amended-statute-no-01-of-2015",
+   "short": "Central Province Provincial Council Pawn Brokers' (Amended) Statute No. 01 of 2015",
+   "title": "Pawn Brokers' (Amended) Statute No. 01 of 2015",
+   "url": "https://www.cp.gov.lk/web/statutes/files/statute-2015-01-en.pdf",
+   "versions": [
+    {
+     "from": "2015-10-14",
+     "units": 1,
+     "source_url": "https://www.cp.gov.lk/web/statutes/files/statute-2015-01-en.pdf",
+     "sha256": "a31a69d3b9dae50b698ce64dce939f3565f6d0a211bf9dc51c1747d39af6e818"
+    }
+   ]
+  },
+  {
+   "slug": "early-childhood-development-charter-no-03-of-2015",
+   "short": "Early Childhood Development Charter No. 03 of 2015",
+   "title": "Early Childhood Development Charter No. 03 of 2015",
+   "url": "https://www.cp.gov.lk/web/statutes/files/statute-2015-03-en.pdf",
+   "versions": [
+    {
+     "from": "2016-03-02",
+     "units": 1,
+     "source_url": "https://www.cp.gov.lk/web/statutes/files/statute-2015-03-en.pdf",
+     "sha256": "4f4910cc794bd929267f402cd2465f1fbf93f85a11421f39c4ee8fe8fb6e7229"
+    }
+   ]
+  },
+  {
+   "slug": "central-provincial-irrigation-statute-no-5-of-2017",
+   "short": "Central Provincial Irrigation Statute No. 5 of 2017",
+   "title": "Irrigation Statute of No.05 of 2017",
+   "url": "https://www.cp.gov.lk/web/statutes/files/statute-2017-05-en.pdf",
+   "versions": [
+    {
+     "from": "2018-10-04",
+     "units": 1,
+     "source_url": "https://www.cp.gov.lk/web/statutes/files/statute-2017-05-en.pdf",
+     "sha256": "15e1a410be640d98b0b65b6acc41e57c339c244ceab716b3ead8896de67bd677"
+    }
+   ]
+  },
+  {
+   "slug": "statute-for-the-establishment-of-central-province-resource-centre-of-local-autho",
+   "short": "Statute for the establishment of Central Province Resource Centre of Local Authorities No. 01 of 2018",
+   "title": "Resource Center Statute. No. 01 of 2018",
+   "url": "https://www.cp.gov.lk/web/statutes/files/statute-2018-01-en.pdf",
+   "versions": [
+    {
+     "from": "2018-10-08",
+     "units": 1,
+     "source_url": "https://www.cp.gov.lk/web/statutes/files/statute-2018-01-en.pdf",
+     "sha256": "b6572edc0f040ed1bdf4e887dcb2339c33006a9cf539a6aff207f2f8b821e987"
+    }
+   ]
+  }
+ ]
+}
