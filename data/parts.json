@@ -13,6 +13,12 @@
     "statute-for-the-establishment-of-central-province-resource-centre-of-local-autho"
    ],
    "sha256": "ba44a4d8a1da3bed4f943f8897346ca49f8e3a41487778179c41a36cf79e23ef"
+  },
+  "30-q168-mineral-tax-order.json": {
+   "acts": [
+    "mineral-tax-order-2014"
+   ],
+   "sha256": "4df63d09a0d9c2d9e585021f5199fbed048abb77cee3f95192a593655eb40dda"
   }
  },
  "schema": 1

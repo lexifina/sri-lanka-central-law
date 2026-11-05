@@ -56,6 +56,20 @@
      "sha256": "b6572edc0f040ed1bdf4e887dcb2339c33006a9cf539a6aff207f2f8b821e987"
     }
    ]
+  },
+  {
+   "slug": "mineral-tax-order-2014",
+   "short": "Mineral tax order under section 9(1) (2014)",
+   "title": "Order under section 9(1) of the Finance (Supplementary Provisions) Statute No. 03 of 1996",
+   "url": "https://www.cp.gov.lk/web/statutes/files/statute-1996-03-en.pdf",
+   "versions": [
+    {
+     "from": "2014-04-01",
+     "units": 1,
+     "source_url": "https://www.cp.gov.lk/web/statutes/files/statute-1996-03-en.pdf",
+     "sha256": "d8e58d88d4f3188ca5ad71e78cff05b016a629da46189b854b921992961f6fb3"
+    }
+   ]
   }
  ]
 }
