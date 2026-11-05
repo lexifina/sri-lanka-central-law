@@ -1,45 +1,30 @@
-# Central Province (Sri Lanka): law history in git
+# Central Province (Sri Lanka): legislative texts in git
 
-The statutes of the Central Provincial Council, Sri Lanka, as a git history: one folder per statute, one paragraph per line, so `git blame`, `git log` and `git diff` work line by line. The text is the English text of each statute as published in the Gazette of the Democratic Socialist Republic of Sri Lanka (Extraordinary), Part IV (A), Provincial Councils, and posted by the Central Provincial Council on its website.
+English texts published by the Central Provincial Council in the Gazette Extraordinary, Part IV (A). This is a partial collection of texts as published. Amendments have not been consolidated into their enabling statutes, and current in-force completeness has not been established.
 
-It follows the shared design of [lexifina/global-law](https://github.com/lexifina/global-law).
+| Record | What it contains | Date basis |
+| --- | --- | --- |
+| Existing statute folders | Four statutes as published, oldest version available | Gazette publication dates retained from the earlier record; assent-based commencement remains to be checked |
+| `mineral-tax-order-2014/000-text.md` | The full English mineral tax order under section 9(1), including its signature and office date | 2014-04-01, explicitly stated in the order |
 
-## What this repository holds
+The Council's catalogue entry numbered 1996-03 links to this order, not to the full Finance (Supplementary Provisions) Statute No. 03 of 1996. The enabling statute remains outside this collection. The order's wording “five per centum (0.5%)” is preserved as published; this record does not resolve that inconsistency.
 
-**Statutes as published, not yet a history.** The Council posts each statute as the Gazette Extraordinary that published it; there is no consolidated text. So each statute is one commit holding its text as published ("oldest version available"), credited to the Council, not to an amending law. An amending statute is its own folder; its amendments are not applied to the statute it amends.
+## Source and language
 
-| Folder | What |
-| --- | --- |
-| one folder per statute (by the short title it gives itself) | one file per section (`000-title.md` for the heading, long title and enacting words), or one file `000-text.md` with the whole statute where its sections cannot be told apart reliably |
+[Central Provincial Council: statutes](https://www.cp.gov.lk/web/statutes/?lang=en), with the English Gazette PDFs linked by the Council. English only; the official texts' language-precedence clauses remain in the text. No OCR text is included in this addition.
 
-Statutes are enacted in Sinhala and Tamil as well; this repository holds the English text only. Where a statute says which language prevails, it says so in its own words here. A statute is left out until it can be read reliably (see "How it is checked"); this record holds only part of the Central Provincial Council's statutes.
+## Reading the history
 
-## Source
+Each folder represents a legislative instrument. The mineral tax order is a single file because its body is one operative paragraph. `git log -- mineral-tax-order-2014` shows its recorded version, and `git blame mineral-tax-order-2014/000-text.md` identifies its publisher credit. There is one version, labelled oldest version available; this is not a consolidated history.
 
-[Central Provincial Council: statutes](https://www.cp.gov.lk/web/statutes/?lang=en), each a PDF of the Gazette Extraordinary (Part IV (A)) with a text layer. Each PDF's sha256 is recorded with its version in `data/versions.json`.
+## Verification and credits
 
-## Dates
-
-Each statute is dated by the day of the Gazette Extraordinary that published it, at noon in Colombo. A statute's own section 1 says when it comes into operation (usually on the Governor's assent); that day is not derived here.
-
-## How it is built
-
-Lexifina reads the sources listed here and records each act's dated versions, and the laws that made each change, in one corpus file. `tools/build.py` writes this repository from that file, and the same corpus always gives the same commit hashes; `REPRODUCE.md` gives the details and the checks. A model (Claude) wrote Lexifina's code; it wrote no legal text, and no model runs when the history is built.
-
-The text layer of each PDF (no OCR) becomes the record. Left out: the Gazette masthead, running heads and the Sinhala/Tamil lines in legacy fonts, page labels, printing footers, the Council Secretary's publication notice, and marginal notes where the statute is kept as one file. Where sections are split, each section file gives its marginal note on the line before the section text.
-
-## How it is checked
-
-Every version is read back from git on the day it took effect and must match the corpus. A second, independent reading of every PDF (a different PDF engine, pdftotext) must contain every paragraph of each statute whole, letter for letter and digit for digit, with nothing in the statute's stretch of the Gazette left out. Results are in `REPRODUCE.md`.
-
-## What "author" means
-
-The author of each commit is the publisher, with an e-mail address that cannot exist; the committer is always Lexifina.
+The mineral tax order's paragraphs were compared against an independent reading of the official PDF, with every paragraph present and no trailing official text missing. Versions also undergo the repository's corpus and commit-trailer checks. Commits for first available texts are attributed to the publisher; Lexifina is the committer. Earlier statutes retain their existing text and date conventions.
 
 ## Limits
 
-Only the statutes as published are here: no later amendments, no consolidation, only the English text, and only the statutes the Council posts with a text layer that pass the check. The Gazette is authoritative.
+The Council's listing contains records without English files and records without linked texts. Other English PDFs remain outside this addition pending reliable extraction, scan transcription checks, or commencement verification. Full current-text coverage and later amendments have not been established.
 
 ## Licence
 
-See [LICENSE](LICENSE): official texts of a legislative nature are not protected by copyright under the Intellectual Property Act, No. 36 of 2003, section 8. Source: Central Provincial Council; Gazette of the Democratic Socialist Republic of Sri Lanka (Department of Government Printing).
+Official legislative texts and official translations are excluded from copyright protection by Sri Lanka's Intellectual Property Act No. 36 of 2003, section 8. Source credit: Central Provincial Council; Gazette of the Democratic Socialist Republic of Sri Lanka, Department of Government Printing. See [LICENSE](LICENSE).
