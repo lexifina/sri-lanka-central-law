@@ -1,5 +1,7 @@
 # Central Province (Sri Lanka): legislative texts in git
 
+Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is the law of Central, Sri Lanka, which global-law reads at `sri-lanka/central/acts/`.
+
 English texts published by the Central Provincial Council in the Gazette Extraordinary, Part IV (A). This is a partial collection of texts as published. Amendments have not been consolidated into their enabling statutes, and current in-force completeness has not been established.
 
 | Record | What it contains | Date basis |
